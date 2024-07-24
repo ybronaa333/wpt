@@ -5,9 +5,13 @@
     <link rel="help" href="https://www.w3.org/TR/css-text-decor-3/#text-underline-position-property">
     <link rel="match" href="reference/text-decoration-underline-position-vertical-ja-ref.html">
     <style>
-        body { writing-mode: vertical-rl; }
-        .underline { text-decoration: underline; }
-        .overline { text-decoration: overline; }
+        @font-face {
+            font-family: halt-font;
+            src: url('/fonts/noto/cjk/NotoSansCJKjp-Regular-subset-halt.otf');
+        }
+        body { writing-mode: vertical-rl; font-family: Arial; }
+        .underline { text-decoration: underline; font-family: halt-font; }
+        .overline { text-decoration: overline; font-family: halt-font; }
     </style>
 </head>
 <body lang="ja">

@@ -3,9 +3,13 @@
 <head>
     <meta charset="utf-8">
     <style>
-            body { writing-mode: vertical-rl; }
-            .underline { text-decoration: underline; }
-            .overline { text-decoration: overline; }
+        @font-face {
+            font-family: halt-font;
+            src: url('/fonts/noto/cjk/NotoSansCJKjp-Regular-subset-halt.otf');
+        }
+        body { writing-mode: vertical-rl; font-family: Arial; }
+        .underline { text-decoration: underline; font-family: halt-font; }
+        .overline { text-decoration: overline; font-family: halt-font; }
     </style>
 </head>
 <body lang="en">
